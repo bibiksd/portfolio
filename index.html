@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibi Sebastian | Senior Full-Stack .NET Developer</title>
+    <meta name="description"
+        content="Portfolio of Bibi Sebastian, a Senior Full-Stack .NET Developer with 8+ years of experience.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8b5cf6',   // Violet 500
+                        secondary: '#a78bfa', // Violet 400
+                        dark: '#020617',      // Slate 950
+                        surface: '#0f172a',   // Slate 900
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass bg-opacity-80 border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#"
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400">
+                        BS
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#experience"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#contact"
+                            class="bg-primary hover:bg-violet-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all">Hire
+                            Me</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button can be added later -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Glows -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-blob">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute -bottom-32 left-20 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-blob animation-delay-4000">
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Text Content -->
+            <div class="order-2 lg:order-1 text-center lg:text-left space-y-6">
+                <div
+                    class="inline-flex items-center px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium mb-2">
+                    <span class="flex h-2 w-2 rounded-full bg-green-400 mr-2"></span>
+                    Available for New Projects
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+                    Hello, I'm <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Bibi
+                        Sebastian</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto lg:mx-0">
+                    Senior Full-Stack .NET Developer with 8+ years of expertise in building scalable enterprise
+                    applications.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#contact"
+                        class="px-8 py-3.5 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold shadow-lg shadow-purple-500/20 transition-all transform hover:-translate-y-1">
+                        Contact Me
+                    </a>
+                    <a href="assets/Bibi Sebastian - Full stack.pdf" download target="_blank"
+                        class="px-8 py-3.5 rounded-lg border border-white/10 hover:bg-white/5 text-white font-semibold transition-all backdrop-blur-sm flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <div class="pt-8 flex items-center justify-center lg:justify-start gap-6 text-2xl text-gray-400">
+                    <a href="mailto:bibiksd@gmail.com" class="hover:text-white transition-colors"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/bibiksd/" target="_blank"
+                        class="hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/bibiksd" target="_blank" class="hover:text-white transition-colors"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://wa.me/8548815839" target="_blank" class="hover:text-green-500 transition-colors"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="order-1 lg:order-2 flex justify-center relative">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[30rem] lg:h-[30rem]">
+                    <!-- Abstract geometric elements behind -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-purple-600 to-blue-600 rounded-full blur-2xl opacity-20 animate-pulse">
+                    </div>
+                    <div
+                        class="absolute inset-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transform rotate-6 z-0">
+                    </div>
+                    <div class="absolute inset-4 rounded-2xl border border-white/10 bg-dark transform -rotate-6 z-0">
+                    </div>
+
+                    <!-- Main Image -->
+                    <div
+                        class="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
+                        <img src="assets/profile.png" alt="Bibi Sebastian"
+                            class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
+                    About Me</h2>
+                <div class="h-1 w-20 bg-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bg-surface/50 p-8 md:p-12 rounded-2xl border border-white/5 backdrop-blur-sm">
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Senior Full-Stack .NET Developer with 8+ years of experience building scalable, secure, and
+                    high-performance enterprise applications using ASP.NET Core, ASP.NET MVC, Web API, C#, Node.js,
+                    Angular, PHP, and microservices. Strong in designing clean architectures, multi-tenant SaaS systems,
+                    complex workflows, and RESTful APIs.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Expert in SQL Server, PostgreSQL, MySQL, MongoDB, with deep experience in performance tuning (CTEs,
+                    indexing, partitions, MERGE, triggers, profiling). Proficient in Docker, Redis, AWS S3, CI/CD
+                    pipelines, and secure authentication using JWT, SSO, Active Directory, and Role-based Authorization.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Experienced across Banking, HR, Payroll, Finance, Inventory, and Document Management domains. Strong
+                    leadership skills with experience in mentoring junior developers, code reviews, planning,
+                    deployments, and production support.
+                </p>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
+                        <div
+                            class="h-10 w-10 flex items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">BTech – Computer Science & Engineering</h4>
+                            <p class="text-sm text-gray-400">KVG College of Engineering, VTU (2016)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-surface relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute right-0 top-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-[100px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Technical Skills</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400"> Technologies and tools I work with.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Card: Backend -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-purple-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-server text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">.NET & Backend</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> ASP.NET Core,
+                            MVC, Web API</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> C#, .NET
+                            Framework</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Entity Framework
+                            Core, ADO.NET</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Microservices,
+                            Hangfire</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card: Frontend -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-pink-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">JavaScript & Frontend</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Angular,
+                            TypeScript</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> React Query,
+                            Axios</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> HTML5, CSS3,
+                            Bootstrap</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> jQuery,
+                            JavaScript</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card: Database -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-blue-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-database text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Databases</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> MS SQL Server,
+                            PostgreSQL</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> MySQL, MariaDB,
+                            MongoDB</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Redis, Sequelize,
+                            Prisma</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Advanced SQL
+                            (CTEs, Partitions)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card: DevOps -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-green-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cloud text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">DevOps & Cloud</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Docker, AWS (S3,
+                            EC2)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CI/CD (GitLab,
+                            Azure DevOps)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Azure Basics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Logging (Serilog,
+                            NLog)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card: Architecture -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-orange-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-sitemap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architecture & Design</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Clean
+                            Architecture, Onion</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Repository
+                            Pattern, Unit of Work</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> DDD Basics, SOLID
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Microservices
+                            Architecture</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card: Testing & Security -->
+                <div
+                    class="group p-6 rounded-xl bg-dark border border-white/5 hover:border-red-500/50 transition-all hover:-translate-y-2">
+                    <div
+                        class="h-12 w-12 rounded-lg bg-gradient-to-br from-red-500 to-rose-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Security & Quality</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> JWT, OAuth2, SSO
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> OWASP Practices
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> xUnit, NUnit, Moq
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Postman, Swagger
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
+                    Professional Experience</h2>
+                <div class="h-1 w-20 bg-purple-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400">A timeline of my journey and projects.</p>
+            </div>
+
+            <div class="relative border-l border-gray-700 ml-4 md:ml-10 space-y-12">
+
+                <!-- Project 12 -->
+                <div class="mb-10 ml-6 md:ml-12 group">
+                    <span
+                        class="absolute flex items-center justify-center w-8 h-8 bg-purple-600 rounded-full -left-4 md:-left-4 ring-8 ring-dark group-hover:scale-110 transition-transform">
+                        <i class="fas fa-briefcase text-white text-xs"></i>
+                    </span>
+                    <div
+                        class="p-6 bg-surface/80 rounded-xl border border-white/5 hover:border-purple-500/30 transition-all shadow-lg hover:shadow-purple-500/10">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-white">HR, Payroll & Finance System</h3>
+                            <span
+                                class="text-sm font-medium text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Feb
+                                2025 – Nov 2025</span>
+                        </div>
+                        <p class="text-lg text-gray-300 font-medium mb-2">Full Stack Developer</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">ASP.NET
+                                Core</span>
+                            <span class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">Web
+                                API</span>
+                            <span class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">MS
+                                SQL</span>
+                            <span
+                                class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">AngularJS</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm md:text-base">
+                            <li>Designed system architecture & database.</li>
+                            <li>Built salary templates, payroll processing, loan disbursals & EMI calculations.</li>
+                            <li>Provided technical direction & production support.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="mb-10 ml-6 md:ml-12 group">
+                    <span
+                        class="absolute flex items-center justify-center w-8 h-8 bg-gray-600 rounded-full -left-4 md:-left-4 ring-8 ring-dark group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code text-white text-xs"></i>
+                    </span>
+                    <div
+                        class="p-6 bg-surface/80 rounded-xl border border-white/5 hover:border-blue-500/30 transition-all shadow-lg">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-white">MYB Stock Take Application</h3>
+                            <span
+                                class="text-sm font-medium text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Nov
+                                2024 – Feb 2025</span>
+                        </div>
+                        <p class="text-lg text-gray-300 font-medium mb-2">Team Lead</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">Node.js</span>
+                            <span
+                                class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">PostgreSQL</span>
+                            <span
+                                class="px-2 py-1 text-xs font-semibold text-gray-300 bg-gray-700 rounded">Angular</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm md:text-base">
+                            <li>Designed architecture & DB structure.</li>
+                            <li>Led team, conducted code reviews & planning.</li>
+                            <li>Developed core stock & receiving modules.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="mb-10 ml-6 md:ml-12 group">
+                    <span
+                        class="absolute flex items-center justify-center w-8 h-8 bg-gray-600 rounded-full -left-4 md:-left-4 ring-8 ring-dark group-hover:scale-110 transition-transform">
+                        <i class="fas fa-file-alt text-white text-xs"></i>
+                    </span>
+                    <div
+                        class="p-6 bg-surface/80 rounded-xl border border-white/5 hover:border-pink-500/30 transition-all shadow-lg">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-white">Document Management System (SaaS)</h3>
+                            <span
+                                class="text-sm font-medium text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Apr
+                                2024 – Jan 2025</span>
+                        </div>
+                        <p class="text-lg text-gray-300 font-medium mb-2">Senior Full Stack Developer</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm md:text-base">
+                            <li>Built UI for multi-file upload & processing.</li>
+                            <li>Contributed to microservices & Node.js backend.</li>
+                            <li>Optimized PostgreSQL operations and file handling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="mb-10 ml-6 md:ml-12 group">
+                    <span
+                        class="absolute flex items-center justify-center w-8 h-8 bg-gray-600 rounded-full -left-4 md:-left-4 ring-8 ring-dark group-hover:scale-110 transition-transform">
+                        <i class="fas fa-key text-white text-xs"></i>
+                    </span>
+                    <div
+                        class="p-6 bg-surface/80 rounded-xl border border-white/5 hover:border-green-500/30 transition-all shadow-lg">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-white">SSO System for AUB</h3>
+                            <span
+                                class="text-sm font-medium text-green-400 bg-green-500/10 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">Mar
+                                2024 – Sep 2024</span>
+                        </div>
+                        <p class="text-lg text-gray-300 font-medium mb-2">Senior Software Developer</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm md:text-base">
+                            <li>Designed SSO architecture, token management & user authentication.</li>
+                            <li>Implemented secure login flows & AD integration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Experience Group -->
+                <div class="mb-10 ml-6 md:ml-12 group">
+                    <span
+                        class="absolute flex items-center justify-center w-8 h-8 bg-gray-600 rounded-full -left-4 md:-left-4 ring-8 ring-dark">
+                        <i class="fas fa-history text-white text-xs"></i>
+                    </span>
+                    <div class="p-6 bg-surface/30 rounded-xl border border-white/5">
+                        <h3 class="text-xl font-bold text-white mb-4">Previous Projects</h3>
+                        <div class="space-y-6">
+
+                            <!-- Project 7 -->
+                            <div>
+                                <h4 class="font-bold text-gray-200">Asset Efficiency System (AUB)</h4>
+                                <p class="text-xs text-gray-500">Mar 2023 – Apr 2024 | Senior Software Developer</p>
+                                <p class="text-sm text-gray-400 mt-1">Designed procurement, budgeting & asset modules.
+                                    Built workflow engine.</p>
+                            </div>
+
+                            <!-- Project 9 -->
+                            <div>
+                                <h4 class="font-bold text-gray-200">Inventory Management System (SaaS)</h4>
+                                <p class="text-xs text-gray-500">Jan 2022 – Apr 2023 | Senior Software Developer / Team
+                                    Lead</p>
+                                <p class="text-sm text-gray-400 mt-1">Architected multi-tenant DB. Developed inventory &
+                                    ledger modules.</p>
+                            </div>
+
+                            <!-- Project 4 -->
+                            <div>
+                                <h4 class="font-bold text-gray-200">Fidelity (Inventory System)</h4>
+                                <p class="text-xs text-gray-500">Jan 2022 – Apr 2023 | Software Developer</p>
+                                <p class="text-sm text-gray-400 mt-1">Designed inventory architecture, stock ledger &
+                                    optimization.</p>
+                            </div>
+
+                            <!-- Project 5 -->
+                            <div>
+                                <h4 class="font-bold text-gray-200">Archival Facility Management System</h4>
+                                <p class="text-xs text-gray-500">Dec 2022 – Mar 2023 | Software Developer</p>
+                                <p class="text-sm text-gray-400 mt-1">Backend APIs for document management, DB
+                                    structures.</p>
+                            </div>
+
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-gray-700">
+                            <p class="text-sm text-gray-500 italic">Also contributed to: Alyasra Stock Take, Budget
+                                Control System (AUBK), Customer Onboarding (COB), OBS 365 ERP.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-dark to-black relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="h-1 w-20 bg-purple-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400">Let's discuss your next project.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-surface flex items-center justify-center border border-white/10 text-purple-500">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-white">Phone</h4>
+                            <p class="text-gray-400 mt-1">+91 8548815839</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-surface flex items-center justify-center border border-white/10 text-blue-500">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-white">Email</h4>
+                            <a href="mailto:bibiksd@gmail.com"
+                                class="text-gray-400 mt-1 hover:text-white transition-colors">bibiksd@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-surface flex items-center justify-center border border-white/10 text-pink-500">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-white">Location</h4>
+                            <p class="text-gray-400 mt-1">Available for Remote & Relocation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-6 bg-surface p-8 rounded-2xl border border-white/5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+                        <input type="text"
+                            class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                            placeholder="Project Inquiry">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea rows="4"
+                            class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                            placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="button"
+                        class="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-white/5">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center bg-transparent">
+            <div class="mb-4 md:mb-0">
+                <span
+                    class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">BS</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2025 Bibi Sebastian. All rights reserved.
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/bibiksd" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/bibiksd/" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://wa.me/8548815839" target="_blank"
+                    class="text-gray-400 hover:text-green-500 transition-colors"><i
+                        class="fab fa-whatsapp text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Basic Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-opacity-95');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('bg-opacity-95');
+            }
+        });
+    </script>
+</body>
+
+</html>
